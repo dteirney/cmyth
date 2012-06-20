@@ -319,6 +319,12 @@ extern void cmyth_dbg_none(void);
  */
 extern void cmyth_set_dbg_msgcallback(void (*msgcb)(int level,char *));
 
+/**
+ * Define a callback to use to send messages rather than using stdout
+ * \param msgcb function pointer to pass a string to
+ */
+extern void cmyth_set_dbg_msgcallback(void (*msgcb)(int level,char *));
+
 /*
  * -----------------------------------------------------------------
  * Connection Operations
